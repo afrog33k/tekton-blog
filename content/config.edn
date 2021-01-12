@@ -19,7 +19,7 @@
  :sass-src                     []
  :sass-path                    "sass"
  :theme                        "blue"
- :resources                    ["img"]
+ :resources                    ["img" "doc"]
  :keep-files                   [".git"]
  :disqus?                      false
  :disqus-shortname             ""
