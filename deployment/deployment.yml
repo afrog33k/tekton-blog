@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myblog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myblog
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: myblog
+    spec:
+      containers:
+      - name: myblog
+        image: registry.digitalocean.com/do-challenge/myblog:dev
+        ports:
+        - name: http
+          containerPort: 80
+        resources:
+          limits:
+            cpu: "0.1"
+            memory: 100Mi
