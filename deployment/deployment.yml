@@ -18,6 +18,7 @@ spec:
       containers:
       - name: myblog
         image: registry.digitalocean.com/do-challenge/myblog:dev
+        imagePullPolicy: Always
         ports:
         - name: http
           containerPort: 80
