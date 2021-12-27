@@ -1,3 +1,3 @@
 # My personal blog
 
-This is a simple static website created using crynogen. Correct
+This is a simple static website created using crynogen.
