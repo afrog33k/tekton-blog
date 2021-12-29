@@ -3,6 +3,15 @@ apiVersion: v1
 kind: Service
 metadata:
   name: "myblog"
+  annotations:
+    getambassador.io/config: |
+      ---
+      apiVersion: ambassador/v1
+      kind: Mapping
+      name: myblog-service_mapping
+      host: myblog.nandaja.space
+      prefix: /
+      service: myblog:8080
 spec:
   ports:
   - name: http
