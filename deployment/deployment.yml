@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: myblog
-        image: registry.digitalocean.com/do-challenge/myblog:dev
+        image: 713445789515.dkr.ecr.us-east-1.amazonaws.com/myblog:dev
         imagePullPolicy: Always
         ports:
         - name: http
