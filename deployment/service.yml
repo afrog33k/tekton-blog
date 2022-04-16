@@ -9,7 +9,7 @@ metadata:
       apiVersion: ambassador/v1
       kind: Mapping
       name: myblog-service_mapping
-      host: myblog.nandaja.space
+      host: myblog.stage.sunlighten.io
       prefix: /
       service: myblog:8080
 spec:
